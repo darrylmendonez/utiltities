@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Nucleus Global Branding</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h1 class="display-4">Nucleus Global Branding</h1>
+        <p class="lead">Choose a theme to get branding information</p>
+        <hr class="my-4">
+        <h3>Current Theme: <span id="current-theme">Nucleus Global</span></h3>
+        <div class="row">
+          <div class="col-md-6">
+            <p>Primary color codes:</p>
+            <code>
+              <span id="primary-code-hex"></span><br>
+              <span id="primary-code-rgb"></span>
+            </code>
+          </div>
+          <div class="col-md-6">
+            <p>Secondary color codes:</p>
+            <code>
+              <span id="secondary-code-hex"></span><br>
+              <span id="secondary-code-rgb"></span>
+            </code>
+          </div>
+        </div>
+      </div>
+      <h1>Themes</h1>
+      <div class="swatches text-center">
+        <span data-agency="Articulate Science" style="background-color:var(--as-primary-color);color:var(--as-secondary-color);
+        border-color: var(--as-font-color);"></span>
+        <span data-agency="Chrysalis Medical" style="background-color:var(--chrys-primary-color);color:var(--chrys-secondary-color);
+        border-color: var(--chrys-font-color);"></span>
+        <span data-agency="Clinical Thinking" style="background-color:var(--ct-primary-color);color:var(--ct-secondary-color);
+        border-color: var(--ct-font-color);"></span>
+        <span data-agency="Cognito Medical" style="background-color:var(--cog-primary-color);color:var(--cog-secondary-color);
+        border-color: var(--cog-font-color);"></span>
+        <span data-agency="Health Interactions" style="background-color:var(--hi-primary-color);color:var(--hi-secondary-color);
+        border-color: var(--hi-font-color);"></span>
+        <span data-agency="IMNE" style="background-color:var(--imne-primary-color);color:var(--imne-secondary-color);
+        border-color: var(--imne-font-color);"></span>
+        <span data-agency="International Medical Press" style="background-color:var(--imp-primary-color);color:var(--imp-secondary-color);
+        border-color: var(--imp-font-color);"></span>
+        <span data-agency="Integress" style="background-color:var(--int-primary-color);color:var(--int-secondary-color);
+        border-color: var(--int-font-color);"></span>
+        <span data-agency="Medical Expressions" style="background-color:var(--me-primary-color);color:var(--me-secondary-color);
+        border-color: var(--me-font-color);"></span>
+        <span data-agency="Meditech Media" style="background-color:var(--mtm-primary-color);color:var(--mtm-secondary-color);
+        border-color: var(--mtm-font-color);"></span>
+        <span data-agency="Nucleus Central" style="background-color:var(--nc-primary-color);color:var(--nc-secondary-color);
+        border-color: var(--nc-font-color);"></span>
+        <span data-agency="Nucleus Global" style="background-color:var(--ng-primary-color);color:var(--ng-secondary-color);
+        border-color: var(--ng-font-color);"></span>
+        <span data-agency="Synaptik Digital" style="background-color:var(--sd-primary-color);color:var(--sd-secondary-color);
+        border-color: var(--sd-font-color);"></span>
+        <span data-agency="Scientific Pathways" style="background-color:var(--sp-primary-color);color:var(--sp-secondary-color);
+        border-color: var(--sp-font-color);"></span>
+        <span data-agency="SciMentum" style="background-color:var(--sci-primary-color);color:var(--sci-secondary-color);
+        border-color: var(--sci-font-color);"></span>
+      </div>
+      <div class="row">
+        <div class="col-md-3">
+          <div class="card" style="background-color:var(--as-primary-color);">
+            <img class="card-img-top" src="http://www.nucleus-global.com/assets/images/agencies/logo-as.png" alt="Card image cap">
+            <div class="card-body">
+              <a data-agency="Articulate Science" href="#" class="btn" style="background-color:var(--as-secondary-color);color:var(--as-font-color);">Select Theme</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card" style="background-color:var(--chrys-primary-color);">
+            <img class="card-img-top" src="http://chrysalismedical.com/img/home.png" alt="Card image cap">
+            <div class="card-body">
+              <a data-agency="Chrysalis Medical" href="#" class="btn" style="background-color:var(--chrys-secondary-color);color:var(--chrys-font-color);">Select Theme</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card" style="background-color:var(--ct-primary-color);">
+            <img class="card-img-top" src="http://www.nucleus-global.com/assets/images/agencies/logo-clinicalthinking.png" alt="Card image cap">
+            <div class="card-body">
+              <a data-agency="Clinical Thinking" href="#" class="btn" style="background-color:var(--ct-secondary-color);color:var(--ct-font-color);">Select Theme</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card" style="background-color:var(--cog-primary-color);">
+            <img class="card-img-top" src="http://www.nucleus-global.com/assets/images/agencies/logo-cognito.png" alt="Card image cap">
+            <div class="card-body">
+              <a data-agency="Cognito Medical" href="#" class="btn" style="background-color:var(--cog-secondary-color);color:var(--cog-font-color);">Select Theme</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-md-3">
+          <div class="card" style="background-color:var(--hi-primary-color);">
+            <img class="card-img-top" src="http://www.nucleus-global.com/assets/images/agencies/logo-hi.png" alt="Card image cap">
+            <div class="card-body">
+              <a data-agency="Health Interactions" href="#" class="btn" style="background-color:var(--hi-secondary-color);color:var(--hi-font-color);">Select Theme</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card" style="background-color:var(--imne-primary-color);">
+            <img class="card-img-top" src="http://www.nucleus-global.com/assets/images/agencies/logo-imne.png" alt="Card image cap">
+            <div class="card-body">
+              <a data-agency="IMNE" href="#" class="btn" style="background-color:var(--imne-secondary-color);color:var(--imne-font-color);">Select Theme</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card" style="background-color:var(--imp-primary-color);">
+            <img class="card-img-top" src="http://www.nucleus-global.com/assets/images/agencies/logo-imp.png" alt="Card image cap">
+            <div class="card-body">
+              <a data-agency="International Medical Press" href="#" class="btn" style="background-color:var(--imp-secondary-color);color:var(--imp-font-color);">Select Theme</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card" style="background-color:var(--int-primary-color);">
+            <img class="card-img-top" src="http://www.nucleus-global.com/assets/images/agencies/logo-integress.png" alt="Card image cap">
+            <div class="card-body">
+              <a data-agency="Integress" href="#" class="btn" style="background-color:var(--int-secondary-color);color:var(--int-font-color);">Select Theme</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-md-3">
+          <div class="card" style="background-color:var(--me-primary-color);">
+            <img class="card-img-top" src="http://www.nucleus-global.com/assets/images/agencies/logo-medicalexpressions.png" alt="Card image cap">
+            <div class="card-body">
+              <a data-agency="Medical Expressions" href="#" class="btn" style="background-color:var(--me-secondary-color);color:var(--me-font-color);">Select Theme</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card" style="background-color:var(--mtm-primary-color);">
+            <img class="card-img-top" src="http://www.nucleus-global.com/assets/images/agencies/logo-mtm.png" alt="Card image cap">
+            <div class="card-body">
+              <a data-agency="MediTech Media" href="#" class="btn" style="background-color:var(--mtm-secondary-color);color:var(--mtm-font-color);">Select Theme</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card" style="background-color:var(--nc-primary-color);">
+            <img class="card-img-top" src="http://www.nucleus-global.com/assets/images/agencies/logo-nucleuscentral.png" alt="Card image cap">
+            <div class="card-body">
+              <a data-agency="Nucleus Central" href="#" class="btn" style="background-color:var(--nc-secondary-color);color:var(--nc-font-color);">Select Theme</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card" style="background-color:var(--ng-primary-color);">
+            <img class="card-img-top" src="https://www.synaptikdigital.com/clients/nucleus-global.png" alt="Card image cap">
+            <div class="card-body">
+              <a data-agency="Nucleus Global" href="#" class="btn" style="background-color:var(--ng-secondary-color);color:var(--ng-font-color);">Select Theme</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="row justify-content-center">
+        <div class="col-md-3">
+          <div class="card" style="background-color:var(--sd-primary-color);">
+            <img class="card-img-top" src="http://www.nucleus-global.com/assets/images/agencies/logo-synaptikdigital.png" alt="Card image cap">
+            <div class="card-body">
+              <a data-agency="Synaptik Digital" href="#" class="btn" style="background-color:var(--sd-secondary-color);color:var(--sd-font-color);">Select Theme</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card" style="background-color:var(--sp-primary-color);">
+            <img class="card-img-top" src="http://www.nucleus-global.com/assets/images/agencies/logo-scientificpathways.png" alt="Card image cap">
+            <div class="card-body">
+              <a data-agency="Scientific Pathways" href="#" class="btn" style="background-color:var(--sp-secondary-color);color:var(--sp-font-color);">Select Theme</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card" style="background-color:var(--sci-primary-color);">
+            <img class="card-img-top" src="http://www.nucleus-global.com/assets/images/agencies/logo-scimentum.png" alt="Card image cap">
+            <div class="card-body">
+              <a data-agency="SciMentum" href="#" class="btn" style="background-color:var(--sci-secondary-color);color:var(--sci-font-color);">Select Theme</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+
+    </div> <!-- /container -->
+
+    <script src="https://code.jquery.com/jquery-3.1.0.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>

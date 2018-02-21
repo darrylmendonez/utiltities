@@ -1,0 +1,99 @@
+/* --- Variables --- */
+
+:root {
+  --primary-color: #00A6C5;
+  --secondary-color: #000000;
+  --font-color: #ffffff;
+  --ng-primary-color: #00A6C5;
+  --ng-secondary-color: #000000;
+  --ng-font-color: #ffffff;
+  --as-primary-color: #9F0F14;
+  --as-secondary-color: #000000;
+  --as-font-color: #ffffff;
+  --chrys-primary-color: #236C97;
+  --chrys-secondary-color: #A4B760;
+  --chrys-font-color: #000000;
+  --ct-primary-color: #002C5F;
+  --ct-secondary-color: #71A4D8;
+  --ct-font-color: #ffffff;
+  --cog-primary-color: #F16622;
+  --cog-secondary-color: #EAE1E6;
+  --cog-font-color: #000000;
+  --hi-primary-color: #008E5B;
+  --hi-secondary-color: #60A8D6;
+  --hi-font-color: #000000;
+  --imne-primary-color: #182169;
+  --imne-secondary-color: #E8611E;
+  --imne-font-color: #ffffff;
+  --imp-primary-color: #003249;
+  --imp-secondary-color: #A5E4FF;
+  --imp-font-color: #ffffff;
+  --int-primary-color: #B41A42;
+  --int-secondary-color: #E49D14;
+  --int-font-color: #000000;
+  --me-primary-color: #b81973;
+  --me-secondary-color: #3c3976;
+  --me-font-color: #ffffff;
+  --mtm-primary-color: #33358B;
+  --mtm-secondary-color: #DD6E23;
+  --mtm-font-color: #ffffff;
+  --nc-primary-color: #00A6C5;
+  --nc-secondary-color: #000000;
+  --nc-font-color: #ffffff;
+  --sd-primary-color: #D22329;
+  --sd-secondary-color: #000717;
+  --sd-font-color: #ffffff;
+  --sp-primary-color: #143629;
+  --sp-secondary-color: #D4A223;
+  --sp-font-color: #ffffff;
+  --sci-primary-color: #31499A;
+  --sci-secondary-color: #00A5ED;
+  --sci-font-color: #ffffff;
+}
+
+/* --- Main styles --- */
+
+body {
+  background-color: var(--secondary-color);
+}
+
+h1 {
+  color: var(--font-color);
+}
+
+.navbar-light .navbar-brand {
+    color: var(--font-color);
+}
+
+.jumbotron {
+  background-color: var(--primary-color);
+  color: var(--font-color);
+}
+
+code {
+  color: var(--font-color);
+}
+
+.swatches span {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin: 10px;
+  cursor: pointer;
+  border-style: solid;
+  border-width: 1px;
+}
+
+.card-img-top {
+  max-height: 116px;
+  object-fit: cover;
+}
+
+/* #sd-card {
+  background-color: var(--sd-primary-color);
+}
+
+#sd-card .card-body a {
+  background: var(--sd-secondary-color);
+  color: var(--sd-font-color);
+} */
