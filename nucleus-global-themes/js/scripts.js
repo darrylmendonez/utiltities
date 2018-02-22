@@ -11,13 +11,18 @@ $(document).ready(function() {
   var primaryRgbColor = getComputedStyle(jumbotron).backgroundColor;
   var secondaryRgbColor = getComputedStyle(body).backgroundColor;
   var fontRgbColor = getComputedStyle(font).color;
+  var agencies = agenciesData;
+  var defaultAgency = agenciesData[11] // nucleus global
+  console.log('agencies[11] = ', agencies[11]);
+  $('#current-theme').html(defaultAgency.name);
+  $('#displayed-url').attr('href', defaultAgency.url);
+  $('#displayed-url').html(defaultAgency.url);
 
   // slice rgbColor into array
   var rgbSlicer = function(rgbColor) {
     rgbColor = rgbColor.substring(4, rgbColor.length-1)
            .replace(/ /g, '')
            .split(',');
-    console.log(rgbColor);
     rValue = parseInt(rgbColor[0]);
     gValue = parseInt(rgbColor[1]);
     bValue = parseInt(rgbColor[2]);
@@ -38,7 +43,6 @@ $(document).ready(function() {
     document.getElementById('primary-code-rgb').innerHTML = primaryRgbColor;
     rgbSlicer(primaryRgbColor);
     primaryHexColor = rgbToHex(rValue, gValue, bValue);
-    console.log('primaryHexColor = ', primaryHexColor);
     document.getElementById('primary-code-hex').innerHTML = primaryHexColor;
     return primaryHexColor;
   }
@@ -48,7 +52,6 @@ $(document).ready(function() {
     document.getElementById('secondary-code-rgb').innerHTML = secondaryRgbColor;
     rgbSlicer(secondaryRgbColor);
     secondaryHexColor = rgbToHex(rValue, gValue, bValue);
-    console.log('secondaryHexColor = ', secondaryHexColor);
     document.getElementById('secondary-code-hex').innerHTML = secondaryHexColor;
     return secondaryHexColor;
   }
@@ -67,6 +70,7 @@ $(document).ready(function() {
   var changeTheme = function(e) {
     var target = e.target;
     var cardElement = target.parentElement.parentElement;
+    // if swatch is clicked
     if (target.nodeName === "SPAN") {
       root.style.setProperty('--primary-color', target.style.backgroundColor);
       primaryRgbColor = getComputedStyle(target).backgroundColor;
@@ -75,6 +79,7 @@ $(document).ready(function() {
       root.style.setProperty('--font-color', target.style.borderColor);
       fontRgbColor = getComputedStyle(target).borderColor;
     }
+    // else if button is clicked
     else if (target.nodeName === "A") {
       e.preventDefault;
       root.style.setProperty('--primary-color', cardElement.style.backgroundColor);
@@ -90,7 +95,19 @@ $(document).ready(function() {
     getPrimaryColorCodes();
     getSecondaryColorCodes();
     // getFontColorCodes();
-    document.getElementById('current-theme').innerHTML = target.getAttribute('data-agency');
+    var agencyId = target.getAttribute('data-agency-id');
+    console.log('agencyId = ', agencyId);
+
+    $('#current-theme').html(agencies[agencyId].name);
+    if (agencies[agencyId].url === "") {
+      console.log('if statement fired');
+      $('#url-span').addClass('d-none');
+    }
+    else {
+      $('#url-span').removeClass('d-none');
+      $('#displayed-url').html(agencies[agencyId].url);
+      $('#displayed-url').attr('href', agencies[agencyId].url);
+    }
   }
 
   swatches.forEach((swatch) => {

@@ -13,55 +13,60 @@
         <h1 class="display-4">Nucleus Global Branding</h1>
         <p class="lead">Choose a theme to get branding information</p>
         <hr class="my-4">
-        <h3>Current Theme: <span id="current-theme">Nucleus Global</span></h3>
+        <h3>Current Theme: <span id="current-theme"></span></h3>
         <div class="row">
-          <div class="col-md-6">
+          <div class="col-md-4">
             <p>Primary color codes:</p>
             <code>
               <span id="primary-code-hex"></span><br>
               <span id="primary-code-rgb"></span>
             </code>
           </div>
-          <div class="col-md-6">
+          <div class="col-md-4">
             <p>Secondary color codes:</p>
             <code>
               <span id="secondary-code-hex"></span><br>
               <span id="secondary-code-rgb"></span>
             </code>
           </div>
+          <div class="col-md-4">
+            <span id="url-span" class="badge badge-light">
+              <a id="displayed-url" href="" target="_blank"></a>
+            </span>
+          </div>
         </div>
       </div>
       <h1>Themes</h1>
       <div class="swatches text-center">
-        <span data-agency="Articulate Science" style="background-color:var(--as-primary-color);color:var(--as-secondary-color);
+        <span data-agency-id="0" data-agency="Articulate Science" style="background-color:var(--as-primary-color);color:var(--as-secondary-color);
         border-color: var(--as-font-color);"></span>
-        <span data-agency="Chrysalis Medical" style="background-color:var(--chrys-primary-color);color:var(--chrys-secondary-color);
+        <span data-agency-id="1" data-agency="Chrysalis Medical" style="background-color:var(--chrys-primary-color);color:var(--chrys-secondary-color);
         border-color: var(--chrys-font-color);"></span>
-        <span data-agency="Clinical Thinking" style="background-color:var(--ct-primary-color);color:var(--ct-secondary-color);
+        <span data-agency-id="2" data-agency="Clinical Thinking" style="background-color:var(--ct-primary-color);color:var(--ct-secondary-color);
         border-color: var(--ct-font-color);"></span>
-        <span data-agency="Cognito Medical" style="background-color:var(--cog-primary-color);color:var(--cog-secondary-color);
+        <span data-agency-id="3" data-agency="Cognito Medical" style="background-color:var(--cog-primary-color);color:var(--cog-secondary-color);
         border-color: var(--cog-font-color);"></span>
-        <span data-agency="Health Interactions" style="background-color:var(--hi-primary-color);color:var(--hi-secondary-color);
+        <span data-agency-id="4" data-agency="Health Interactions" style="background-color:var(--hi-primary-color);color:var(--hi-secondary-color);
         border-color: var(--hi-font-color);"></span>
-        <span data-agency="IMNE" style="background-color:var(--imne-primary-color);color:var(--imne-secondary-color);
+        <span data-agency-id="5" data-agency="IMNE" style="background-color:var(--imne-primary-color);color:var(--imne-secondary-color);
         border-color: var(--imne-font-color);"></span>
-        <span data-agency="International Medical Press" style="background-color:var(--imp-primary-color);color:var(--imp-secondary-color);
+        <span data-agency-id="6" data-agency="International Medical Press" style="background-color:var(--imp-primary-color);color:var(--imp-secondary-color);
         border-color: var(--imp-font-color);"></span>
-        <span data-agency="Integress" style="background-color:var(--int-primary-color);color:var(--int-secondary-color);
+        <span data-agency-id="7" data-agency="Integress" style="background-color:var(--int-primary-color);color:var(--int-secondary-color);
         border-color: var(--int-font-color);"></span>
-        <span data-agency="Medical Expressions" style="background-color:var(--me-primary-color);color:var(--me-secondary-color);
+        <span data-agency-id="8" data-agency="Medical Expressions" style="background-color:var(--me-primary-color);color:var(--me-secondary-color);
         border-color: var(--me-font-color);"></span>
-        <span data-agency="Meditech Media" style="background-color:var(--mtm-primary-color);color:var(--mtm-secondary-color);
+        <span data-agency-id="9" data-agency="Meditech Media" style="background-color:var(--mtm-primary-color);color:var(--mtm-secondary-color);
         border-color: var(--mtm-font-color);"></span>
-        <span data-agency="Nucleus Central" style="background-color:var(--nc-primary-color);color:var(--nc-secondary-color);
+        <span data-agency-id="10" data-agency="Nucleus Central" style="background-color:var(--nc-primary-color);color:var(--nc-secondary-color);
         border-color: var(--nc-font-color);"></span>
-        <span data-agency="Nucleus Global" style="background-color:var(--ng-primary-color);color:var(--ng-secondary-color);
+        <span data-agency-id="11" data-agency="Nucleus Global" style="background-color:var(--ng-primary-color);color:var(--ng-secondary-color);
         border-color: var(--ng-font-color);"></span>
-        <span data-agency="Synaptik Digital" style="background-color:var(--sd-primary-color);color:var(--sd-secondary-color);
+        <span data-agency-id="12" data-agency="Synaptik Digital" style="background-color:var(--sd-primary-color);color:var(--sd-secondary-color);
         border-color: var(--sd-font-color);"></span>
-        <span data-agency="Scientific Pathways" style="background-color:var(--sp-primary-color);color:var(--sp-secondary-color);
+        <span data-agency-id="13" data-agency="Scientific Pathways" style="background-color:var(--sp-primary-color);color:var(--sp-secondary-color);
         border-color: var(--sp-font-color);"></span>
-        <span data-agency="SciMentum" style="background-color:var(--sci-primary-color);color:var(--sci-secondary-color);
+        <span data-agency-id="14" data-agency="SciMentum" style="background-color:var(--sci-primary-color);color:var(--sci-secondary-color);
         border-color: var(--sci-font-color);"></span>
       </div>
       <div class="row">
@@ -199,9 +204,12 @@
 
     </div> <!-- /container -->
 
-    <script src="https://code.jquery.com/jquery-3.1.0.js" crossorigin="anonymous"></script>
+    <!-- js libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!-- custom js -->
+    <script src="data/agencies.json"></script>
     <script src="js/scripts.js"></script>
   </body>
 </html>
