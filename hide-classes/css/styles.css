@@ -1,0 +1,59 @@
+.red-hr {
+	margin: 0;
+}
+
+.pink-background {
+	background-color: #f4dfe2;
+}
+
+.header-img {
+	padding-top: 30px;
+	width: 100%;
+	max-width: 65%;
+	padding-left: 24%;
+	margin-left: auto;
+}
+
+.header-img-xs {
+	padding-top: 30px;
+	margin-left: auto;
+}
+
+.brand-logo-img {
+	max-width: 65%;
+	padding-top: 20px;
+}
+
+.brand-logo-img-xs {
+	/* max-width: 65%; */
+	padding-top: 40px;
+}
+
+.booth-number-img {
+	padding-top: 157%;
+
+	/* padding-bottom: 16px; */
+}
+
+.booth-number-img-xs {
+	padding: 10px 0;
+	max-width: 40%;
+}
+
+.container-footer {
+	width: 100%;
+	padding-right: 20%;
+	padding-left: 20%;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.container-footer .copyright {
+	display: block;
+	font-size: 13px;
+	margin-top: 20px;
+}
+
+.gray-hr {
+	max-width: 85%;
+}
