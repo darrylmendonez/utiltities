@@ -2,76 +2,91 @@ agenciesData = [
   {
     "id": 0,
     "name": "Articulate Science",
-    "url": "http://www.articulatescience.com/"
+    "url": "http://www.articulatescience.com/",
+    "logoUrl": "http://www.nucleus-global.com/assets/images/agencies/logo-as.png"
   },
   {
     "id": 1,
     "name": "Chrysalis Medical",
-    "url": "http://chrysalismedical.com/"
+    "url": "http://chrysalismedical.com/",
+    "logoUrl": "http://chrysalismedical.com/img/home.png"
   },
   {
     "id": 2,
     "name": "Clinical Thinking",
-    "url": "http://clinicalthinking.com/"
+    "url": "http://clinicalthinking.com/",
+    "logoUrl": "http://www.nucleus-global.com/assets/images/agencies/logo-clinicalthinking.png"
   },
   {
     "id": 3,
     "name": "Cognito Medical",
-    "url": ""
+    "url": "",
+    "logoUrl": "http://www.nucleus-global.com/assets/images/agencies/logo-cognito.png"
   },
   {
     "id": 4,
     "name": "Health Interactions",
-    "url": "http://www.healthinteractions.com/"
+    "url": "http://www.healthinteractions.com/",
+    "logoUrl": "http://www.nucleus-global.com/assets/images/agencies/logo-hi.png"
   },
   {
     "id": 5,
     "name": "IMNE",
-    "url": "http://www.imne.com/"
+    "url": "http://www.imne.com/",
+    "logoUrl": "http://www.nucleus-global.com/assets/images/agencies/logo-imne.png"
   },
   {
     "id": 6,
     "name": "International Medical Press",
-    "url": "http://www.intmedpress.com/"
+    "url": "http://www.intmedpress.com/",
+    "logoUrl": "http://www.nucleus-global.com/assets/images/agencies/logo-imp.png"
   },
   {
     "id": 7,
     "name": "Integress",
-    "url": "http://www.meetintegress.com/"
+    "url": "http://www.meetintegress.com/",
+    "logoUrl": "http://www.nucleus-global.com/assets/images/agencies/logo-integress.png"
   },
   {
     "id": 8,
     "name": "Medical Expressions",
-    "url": ""
+    "url": "",
+    "logoUrl": "http://www.nucleus-global.com/assets/images/agencies/logo-medicalexpressions.png"
   },
   {
     "id": 9,
     "name": "MediTech Media",
-    "url": "http://www.meditechmedia.com/"
+    "url": "http://www.meditechmedia.com/",
+    "logoUrl": "http://www.nucleus-global.com/assets/images/agencies/logo-mtm.png"
   },
   {
     "id": 10,
     "name": "Nucleus Central",
-    "url": ""
+    "url": "",
+    "logoUrl": "http://www.nucleus-global.com/assets/images/agencies/logo-nucleuscentral.png"
   },
   {
     "id": 11,
     "name": "Nucleus Global",
-    "url": "http://www.nucleus-global.com/"
+    "url": "http://www.nucleus-global.com/",
+    "logoUrl": "https://www.synaptikdigital.com/clients/nucleus-global.png"
   },
   {
     "id": 12,
     "name": "Synaptik Digital",
-    "url": "https://www.synaptikdigital.com/"
+    "url": "https://www.synaptikdigital.com/",
+    "logoUrl": "http://www.nucleus-global.com/assets/images/agencies/logo-synaptikdigital.png"
   },
   {
     "id": 13,
     "name": "Scientific Pathways",
-    "url": "http://www.scientificpathways.com/"
+    "url": "http://www.scientificpathways.com/",
+    "logoUrl": "http://www.nucleus-global.com/assets/images/agencies/logo-scientificpathways.png"
   },
   {
     "id": 14,
     "name": "SciMentum",
-    "url": "http://www.scimentum.com/"
+    "url": "http://www.scimentum.com/",
+    "logoUrl": "http://www.nucleus-global.com/assets/images/agencies/logo-scimentum.png"
   }
 ]

@@ -17,6 +17,7 @@ $(document).ready(function() {
   $('#current-theme').html(defaultAgency.name);
   $('#displayed-url').attr('href', defaultAgency.url);
   $('#displayed-url').html(defaultAgency.url);
+  $('#displayed-logo').attr('src', defaultAgency.logoUrl);
 
   // slice rgbColor into array
   var rgbSlicer = function(rgbColor) {
@@ -108,6 +109,7 @@ $(document).ready(function() {
       $('#displayed-url').html(agencies[agencyId].url);
       $('#displayed-url').attr('href', agencies[agencyId].url);
     }
+    $('#displayed-logo').attr('src', agencies[agencyId].logoUrl);
   }
 
   swatches.forEach((swatch) => {
