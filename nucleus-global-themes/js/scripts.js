@@ -18,6 +18,8 @@ $(document).ready(function() {
   $('#displayed-url').attr('href', defaultAgency.url);
   $('#displayed-url').html(defaultAgency.url);
   $('#displayed-logo').attr('src', defaultAgency.logoUrl);
+  $('#primary-code-pantone').html(defaultAgency.pantonePrimary);
+  $('#secondary-code-pantone').html(defaultAgency.pantoneSecondary);
 
   // slice rgbColor into array
   var rgbSlicer = function(rgbColor) {
@@ -71,7 +73,7 @@ $(document).ready(function() {
   var changeTheme = function(e) {
     var target = e.target;
     var cardElement = target.parentElement.parentElement;
-    // if swatch is clicked
+    // swatch is clicked
     if (target.nodeName === "SPAN") {
       root.style.setProperty('--primary-color', target.style.backgroundColor);
       primaryRgbColor = getComputedStyle(target).backgroundColor;
@@ -80,7 +82,7 @@ $(document).ready(function() {
       root.style.setProperty('--font-color', target.style.borderColor);
       fontRgbColor = getComputedStyle(target).borderColor;
     }
-    // else if button is clicked
+    // button is clicked
     else if (target.nodeName === "A") {
       e.preventDefault;
       root.style.setProperty('--primary-color', cardElement.style.backgroundColor);
@@ -110,6 +112,8 @@ $(document).ready(function() {
       $('#displayed-url').attr('href', agencies[agencyId].url);
     }
     $('#displayed-logo').attr('src', agencies[agencyId].logoUrl);
+    $('#primary-code-pantone').html(agencies[agencyId].pantonePrimary);
+    $('#secondary-code-pantone').html(agencies[agencyId].pantoneSecondary);
   }
 
   swatches.forEach((swatch) => {

@@ -4,9 +4,6 @@
   --primary-color: #00A6C5;
   --secondary-color: #000000;
   --font-color: #ffffff;
-  --ng-primary-color: #00A6C5;
-  --ng-secondary-color: #000000;
-  --ng-font-color: #ffffff;
   --as-primary-color: #9F0F14;
   --as-secondary-color: #000000;
   --as-font-color: #ffffff;
@@ -40,6 +37,9 @@
   --nc-primary-color: #00A6C5;
   --nc-secondary-color: #000000;
   --nc-font-color: #ffffff;
+  --ng-primary-color: #00A6C5;
+  --ng-secondary-color: #000000;
+  --ng-font-color: #ffffff;
   --sd-primary-color: #D22329;
   --sd-secondary-color: #000717;
   --sd-font-color: #ffffff;

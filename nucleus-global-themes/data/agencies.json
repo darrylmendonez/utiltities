@@ -2,90 +2,120 @@ agenciesData = [
   {
     "id": 0,
     "name": "Articulate Science",
+    "pantonePrimary": "7621 C",
+    "pantoneSecondary": "Black 6 C",
     "url": "http://www.articulatescience.com/",
     "logoUrl": "http://www.nucleus-global.com/assets/images/agencies/logo-as.png"
   },
   {
     "id": 1,
     "name": "Chrysalis Medical",
+    "pantonePrimary": "647 C",
+    "pantoneSecondary": "5777 C",
     "url": "http://chrysalismedical.com/",
     "logoUrl": "http://chrysalismedical.com/img/home.png"
   },
   {
     "id": 2,
     "name": "Clinical Thinking",
+    "pantonePrimary": "648 C",
+    "pantoneSecondary": "659 C",
     "url": "http://clinicalthinking.com/",
     "logoUrl": "http://www.nucleus-global.com/assets/images/agencies/logo-clinicalthinking.png"
   },
   {
     "id": 3,
     "name": "Cognito Medical",
+    "pantonePrimary": "1585 C",
+    "pantoneSecondary": "7604 C",
     "url": "",
     "logoUrl": "http://www.nucleus-global.com/assets/images/agencies/logo-cognito.png"
   },
   {
     "id": 4,
     "name": "Health Interactions",
+    "pantonePrimary": "340 C",
+    "pantoneSecondary": "284 C",
     "url": "http://www.healthinteractions.com/",
     "logoUrl": "http://www.nucleus-global.com/assets/images/agencies/logo-hi.png"
   },
   {
     "id": 5,
     "name": "IMNE",
+    "pantonePrimary": "273 C",
+    "pantoneSecondary": "1585 C",
     "url": "http://www.imne.com/",
     "logoUrl": "http://www.nucleus-global.com/assets/images/agencies/logo-imne.png"
   },
   {
     "id": 6,
     "name": "International Medical Press",
+    "pantonePrimary": "7621 C",
+    "pantoneSecondary": "130 C",
     "url": "http://www.intmedpress.com/",
     "logoUrl": "http://www.nucleus-global.com/assets/images/agencies/logo-imp.png"
   },
   {
     "id": 7,
     "name": "Integress",
+    "pantonePrimary": "7621 C",
+    "pantoneSecondary": "130 C",
     "url": "http://www.meetintegress.com/",
     "logoUrl": "http://www.nucleus-global.com/assets/images/agencies/logo-integress.png"
   },
   {
     "id": 8,
     "name": "Medical Expressions",
+    "pantonePrimary": "233 C",
+    "pantoneSecondary": "7672 C",
     "url": "",
     "logoUrl": "http://www.nucleus-global.com/assets/images/agencies/logo-medicalexpressions.png"
   },
   {
     "id": 9,
     "name": "MediTech Media",
+    "pantonePrimary": "7672 C",
+    "pantoneSecondary": "158 C",
     "url": "http://www.meditechmedia.com/",
     "logoUrl": "http://www.nucleus-global.com/assets/images/agencies/logo-mtm.png"
   },
   {
     "id": 10,
     "name": "Nucleus Central",
+    "pantonePrimary": "7703 C",
+    "pantoneSecondary": "Black 6 C",
     "url": "",
     "logoUrl": "http://www.nucleus-global.com/assets/images/agencies/logo-nucleuscentral.png"
   },
   {
     "id": 11,
     "name": "Nucleus Global",
+    "pantonePrimary": "7703 C",
+    "pantoneSecondary": "Black 6 C",
     "url": "http://www.nucleus-global.com/",
     "logoUrl": "https://www.synaptikdigital.com/clients/nucleus-global.png"
   },
   {
     "id": 12,
     "name": "Synaptik Digital",
+    "pantonePrimary": "7597 C",
+    "pantoneSecondary": "Neutral Black C",
     "url": "https://www.synaptikdigital.com/",
     "logoUrl": "http://www.nucleus-global.com/assets/images/agencies/logo-synaptikdigital.png"
   },
   {
     "id": 13,
     "name": "Scientific Pathways",
+    "pantonePrimary": "560 C",
+    "pantoneSecondary": "110 C",
     "url": "http://www.scientificpathways.com/",
     "logoUrl": "http://www.nucleus-global.com/assets/images/agencies/logo-scientificpathways.png"
   },
   {
     "id": 14,
     "name": "SciMentum",
+    "pantonePrimary": "2736 C",
+    "pantoneSecondary": "2925 C",
     "url": "http://www.scimentum.com/",
     "logoUrl": "http://www.nucleus-global.com/assets/images/agencies/logo-scimentum.png"
   }
