@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Flip It</title>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<style>
 	#flipForm {
 		padding-top: 50px;
@@ -18,19 +18,34 @@
 </head>
 <body>
 
-<div class="container-fluid">
-	<form id="flipForm" role="form">
-		<div class="form-group">
-	    	<input type="text" class="form-control" id="path" placeholder="Enter Path Here..." value="">
-	  	</div>
-
-		<button id="flip" class="btn btn-info btn-lg">Flip</button>
-	</form>
-
-	<p>&nbsp;</p>
-
-	<div id="errorMessage" class="alert alert-danger"></div>
-	<div id="successMessage" class="alert alert-success"></div>
+<div class="container">
+	<div class="row">
+		<div class="col-md-12">
+			<div class="card">
+				<div class="card-header">
+					<h2 class="card-title">Flip It</h2>
+			    <h4 class="card-subtitle mb-2 text-muted">Paste in a mac or pc server link to convert to a pc or mac link</h4>
+				</div>
+			  <div class="card-body">
+					<div class="card">
+						<div class="card-header">
+							Example:<br>
+							<br>
+							Paste in <code>smb://atlsws03/creativestage/utilities</code> to convert to <code>\\nglocal.com\utilities\creativestage</code>
+						</div>
+					</div>
+					<form id="flipForm" role="form">
+						<div class="form-group">
+					    	<input type="text" class="form-control" id="path" placeholder="Enter Path Here..." value="">
+					  	</div>
+						<button id="flip" class="btn btn-primary btn-lg">Flip</button>
+					</form>
+					<div id="errorMessage" class="alert alert-danger"></div>
+					<div id="successMessage" class="alert alert-success"></div>
+			  </div>
+			</div>
+		</div>
+	</div>
 </div>
 
 <script src="https://code.jquery.com/jquery-2.1.4.min.js" type="text/javascript"></script>
